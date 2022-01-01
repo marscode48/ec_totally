@@ -4,6 +4,271 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.font-sm, .footer__copyright {
+  font-size: 10px;
+}
+
+.font-md, .header__menu li a, .header__login li a, .main__text, .main__price, .main__item-table th, .main__item-table td, .main__btn, .main__size-table th, .main__size-table td {
+  font-size: 12px;
+}
+
+.font-lg, .main__title {
+  font-size: 16px;
+}
+
+.mb-sm, .main__btn {
+  margin-bottom: 30px !important;
+}
+
+.mb-lg {
+  margin-bottom: 50px !important;
+}
+
+.content-width, .footer {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.flex, .header__nav, .header__menu, .header__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  max-width: 1000px;
+}
+
+.header__inner {
+  padding: 36px 16px 16px;
+}
+
+.header__logo {
+  margin: 0 auto 26px auto;
+  width: 109px;
+}
+
+.header__logo a {
+  display: block;
+}
+
+.header__nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.header__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header__menu li {
+  margin-right: 14px;
+}
+
+.header__menu li:last-child {
+  margin: 0;
+}
+
+.header__menu li a {
+  color: #333333;
+}
+
+.header__login {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header__login li {
+  margin-right: 14px;
+}
+
+.header__login li:last-child {
+  margin: 0;
+}
+
+.header__login li a {
+  color: #333333;
+}
+
+.main__wrapper {
+  margin: 0 auto 100px;
+  max-width: 800px;
+}
+
+.main__img {
+  margin-bottom: 10px;
+}
+
+.main__item {
+  padding: 0 16px;
+}
+
+.main__title {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  border-top: 1px solid #C3C3C3;
+  border-bottom: 1px solid #C3C3C3;
+  font-weight: bold;
+}
+
+.main__text {
+  margin-bottom: 20px;
+  line-height: 1.9;
+}
+
+.main__price {
+  margin-bottom: 20px;
+  line-height: 1.9;
+}
+
+.main__item-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main__item-table th {
+  padding: 10px;
+  font-weight: normal;
+  text-align: center;
+  border-right: 1px solid #C3C3C3;
+}
+
+.main__item-table th:last-child {
+  border-right: none;
+}
+
+.main__item-table .color {
+  width: 20%;
+}
+
+.main__item-table .size {
+  width: 20%;
+}
+
+.main__item-table .quantitiy {
+  width: 60%;
+}
+
+.main__item-table td {
+  padding: 10px;
+  font-weight: normal;
+  text-align: center;
+  border-right: 1px solid #C3C3C3;
+  border-top: 1px solid #C3C3C3;
+}
+
+.main__item-table td:last-child {
+  border-right: none;
+}
+
+.main__item-table td select {
+  width: 100%;
+  border: 1px solid #C3C3C3;
+  padding: 0 10px;
+}
+
+.main__btn {
+  display: inline-block;
+  padding: 18px 0;
+  width: 100%;
+  background-color: #4B4B4B;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.main__btn:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.main__size-table {
+  width: 100%;
+  border-top: solid 1px #c3c3c3;
+  border-left: solid 1px #c3c3c3;
+}
+
+.main__size-table th {
+  padding: 10px;
+  text-align: center;
+  background-color: #ecebeb;
+  font-weight: normal;
+  border-right: solid 1px #c3c3c3;
+  border-bottom: solid 1px #c3c3c3;
+}
+
+.main__size-table .size {
+  width: 16%;
+}
+
+.main__size-table .chest {
+  width: 28%;
+}
+
+.main__size-table .weist {
+  width: 28%;
+}
+
+.main__size-table .height {
+  width: 28%;
+}
+
+.main__size-table td {
+  padding: 10px 0;
+  text-align: center;
+  border-right: solid 1px #c3c3c3;
+  border-bottom: solid 1px #c3c3c3;
+}
+
+.footer {
+  padding: 10px 0;
+}
+
+.footer__copyright {
+  margin: 0;
+  text-align: center;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
