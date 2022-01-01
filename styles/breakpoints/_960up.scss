@@ -3,3 +3,47 @@
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+
+
+.header {
+  margin: 0 auto 50px;
+  border-bottom: solid 1px #C3C3C3;
+
+  &__inner {
+    padding: 46px 0 26px;
+  }
+
+  &__logo {
+    margin-bottom: 36px;
+  }
+
+  &__nav {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: unset;
+  }
+}
+
+.main {
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    max-width: 400px;
+    margin: 0 60px 0 0;
+    flex-shrink: 0;
+  }
+
+  &__item {
+    padding: 0;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+
+}
