@@ -1,0 +1,276 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1;
+  color: $cBlack;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+.font-sm {
+  font-size: 10px;
+}
+.font-md {
+  font-size: 12px;
+}
+.font-lg {
+  font-size: 16px;
+}
+.mb-sm {
+  margin-bottom: 30px !important;
+}
+.mb-lg {
+  margin-bottom: 50px !important;
+}
+// .pb-sm {
+//   padding-bottom: 16px !important;
+// }
+// .pb-lg {
+//   padding-bottom: 80px !important;
+// }
+.content-width {
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+// .main-title {
+//   @extend .font-lg;
+//   font-weight: 600;
+//   margin-bottom: 0;
+//   display: block;
+// }
+// .sub-title {
+//   @extend .font-sm;
+//   color: $cSubTitle;
+// }
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  max-width: 1000px;
+
+  &__inner {
+    padding: 36px 16px 16px;
+  }
+
+  &__logo {
+    margin: 0 auto 26px auto;
+    width: 109px;
+
+    a {
+      display: block;
+    }
+  }
+
+  &__nav {
+    @extend .flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: scroll;
+  }
+
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @extend .flex;
+    flex-direction: row;
+
+    li {
+      margin-right: 14px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      a {
+        color: $cBlack;
+        @extend .font-md;
+      }
+    }
+  }
+
+  &__login {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @extend .flex;
+    flex-direction: row;
+
+    li {
+      margin-right: 14px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      a {
+        color: $cBlack;
+        @extend .font-md;
+      }
+    }
+  }
+}
+
+.main {
+  &__wrapper {
+    margin: 0 auto 100px;
+    max-width: 800px;
+  }
+
+  &__img {
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    padding: 0 16px;
+  }
+
+  &__title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-top: 1px solid #C3C3C3;
+    border-bottom: 1px solid #C3C3C3;
+    @extend .font-lg;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    @extend .font-md;
+    line-height: 1.9;
+  }
+
+  &__price {
+    margin-bottom: 20px;
+    @extend .font-md;
+    line-height: 1.9;
+  }
+
+  &__item-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    th {
+      padding: 10px;
+      @extend .font-md;
+      font-weight: normal;
+      text-align: center;
+      border-right: 1px solid #C3C3C3;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    & .color {
+      width: 20%;
+    }
+
+    & .size {
+      width: 20%;
+    }
+
+    & .quantitiy {
+      width: 60%;
+    }
+
+    td {
+      padding: 10px;
+      @extend .font-md;
+      font-weight: normal;
+      text-align: center;
+      border-right: 1px solid #C3C3C3;
+      border-top: 1px solid #C3C3C3;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      & select {
+        width: 100%;
+        border: 1px solid #C3C3C3;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 18px 0;
+    width: 100%;
+    background-color: 
+    #4B4B4B;
+    text-align: center;
+    color: $cWhite;
+    cursor: pointer;
+    @extend .font-md;
+    @extend .mb-sm;
+
+    &:hover {
+      text-decoration: none;
+      color: $cWhite;
+    }
+  }
+
+  &__size-table {
+    width: 100%;
+    border-top: solid 1px #c3c3c3;
+    border-left: solid 1px #c3c3c3;
+
+    th {
+      padding: 10px;
+      @extend .font-md;
+      text-align: center;
+      background-color: #ecebeb;
+      font-weight: normal;
+      border-right: solid 1px #c3c3c3;
+      border-bottom: solid 1px #c3c3c3;
+    }
+
+    & .size {
+      width: 16%;
+    }
+
+    & .chest {
+      width: 28%;
+    }
+
+    & .weist {
+      width: 28%;
+    }
+
+    & .height {
+      width: 28%;
+    }
+
+    td {
+      padding: 10px 0;
+      @extend .font-md;
+      text-align: center;
+      border-right: solid 1px #c3c3c3;
+      border-bottom: solid 1px #c3c3c3;
+    }
+  }
+}
+
+.footer {
+  padding: 10px 0;
+  @extend .content-width;
+
+  &__copyright {
+    margin: 0;
+    text-align: center;
+    @extend .font-sm;
+  }
+}
